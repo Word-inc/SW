@@ -43,7 +43,7 @@
       }
 
       .txtBox {
-        margin-top: 54px;
+        margin-top: 60px;
         @include ipad{
           margin-top: 34px;
         }
@@ -61,17 +61,17 @@
         }
 
         .txt {
-          margin-top: 43px;
+          margin-top: 40px;
 
           @include ipad {
             margin-top: 30px;
           }
 
           &:first-of-type {
-            margin-top: 17px;
+            margin-top: 21px;
 
             @include ipad {
-              margin-top: 19px;
+              margin-top: 20px;
             }
           }
 
@@ -87,24 +87,22 @@
         }
 
         ul {
-          margin-top: 16px;
+          margin-top: 30px;
           list-style: decimal;
           padding-left: 17px;
 
           @include ipad {
-            margin-top: 17px;
+            margin-top: 20px;
           }
 
           li {
             margin-bottom: 10px;
-            line-height: 1.5;
-
+            line-height: calc(30 / 16);
             &:last-of-type {
-              margin-bottom: 0;
+              margin-bottom: 10;
             }
 
             @include ipad {
-              margin-bottom: 7px;
               line-height: calc(21.45/13.2);
             }
           }
