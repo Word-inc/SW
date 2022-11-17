@@ -136,7 +136,25 @@ footer {
 			.small {
 				font-size: 1.2rem;
 				letter-spacing: 0.1em;
+				padding-top: 5px;
+				padding-left: 20px;
+				position: relative;
+				letter-spacing: 0;
 				@include subFont;
+				&:hover a {
+					color: #97a0a8;
+				}
+				@include ipad {
+					padding-top: 13px;
+					padding-left: 0;
+				}
+			}
+			.copyright{
+				position: relative;
+				left: 37px;
+				@include ipad{
+					left: 0;
+				}
 			}
 			.box {
 				display: flex;
@@ -150,31 +168,19 @@ footer {
 				img {
 					padding-right: 20px;
 				}
-				.small {
-					padding-top: 5px;
-					padding-left: 20px;
-					position: relative;
-					letter-spacing: 0;
+
+				&::after {
+					content: "";
+					display: inline-block;
+					width: 1px;
+					height: 12px;
+					background-color: #fff;
+					position: absolute;
+					top: 5px;
+					left: 0;
+					transform: rotate(15deg);
 					@include ipad {
-						padding-top: 13px;
-						padding-left: 0;
-					}
-					&:hover a {
-						color: #97a0a8;
-					}
-					&::after {
-						content: "";
-						display: inline-block;
-						width: 1px;
-						height: 12px;
-						background-color: #fff;
-						position: absolute;
-						top: 5px;
-						left: 0;
-						transform: rotate(15deg);
-						@include ipad {
-							content: none;
-						}
+						content: none;
 					}
 				}
 			}

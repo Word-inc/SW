@@ -1968,8 +1968,30 @@ footer .menu .privacy {
 footer .menu .privacy .small {
   font-size: 1.2rem;
   letter-spacing: 0.1em;
+  padding-top: 5px;
+  padding-left: 20px;
+  position: relative;
+  letter-spacing: 0;
   font-family: "Outfit", sans-serif;
   font-weight: 400;
+}
+footer .menu .privacy .small:hover a {
+  color: #97a0a8;
+}
+@media (max-width: 768px) {
+  footer .menu .privacy .small {
+    padding-top: 13px;
+    padding-left: 0;
+  }
+}
+footer .menu .privacy .copyright {
+  position: relative;
+  left: 37px;
+}
+@media (max-width: 768px) {
+  footer .menu .privacy .copyright {
+    left: 0;
+  }
 }
 footer .menu .privacy .box {
   display: -webkit-box;
@@ -1995,22 +2017,7 @@ footer .menu .privacy .box {
 footer .menu .privacy .box img {
   padding-right: 20px;
 }
-footer .menu .privacy .box .small {
-  padding-top: 5px;
-  padding-left: 20px;
-  position: relative;
-  letter-spacing: 0;
-}
-@media (max-width: 768px) {
-  footer .menu .privacy .box .small {
-    padding-top: 13px;
-    padding-left: 0;
-  }
-}
-footer .menu .privacy .box .small:hover a {
-  color: #97a0a8;
-}
-footer .menu .privacy .box .small::after {
+footer .menu .privacy .box::after {
   content: "";
   display: inline-block;
   width: 1px;
@@ -2023,7 +2030,7 @@ footer .menu .privacy .box .small::after {
           transform: rotate(15deg);
 }
 @media (max-width: 768px) {
-  footer .menu .privacy .box .small::after {
+  footer .menu .privacy .box::after {
     content: none;
   }
 }
