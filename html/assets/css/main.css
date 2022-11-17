@@ -639,7 +639,7 @@ body {
 .c-Ttl h2 img {
   display: block;
   position: relative;
-  bottom: 30px;
+  bottom: 35px;
   margin-right: 10px;
 }
 @media (max-width: 768px) {
@@ -650,7 +650,7 @@ body {
     bottom: 10px;
     -o-object-fit: cover;
        object-fit: cover;
-    margin-right: 6px;
+    margin-right: 3px;
   }
 }
 
@@ -852,7 +852,8 @@ body {
 
 @media (max-width: 768px) {
   h2 img {
-    width: 34.2px;
+    width: 35px;
+    height: 50px;
     padding-bottom: 10px;
   }
 }
@@ -1727,8 +1728,6 @@ header .hamburger span {
   height: 1px;
   background-color: #1b2d3e;
   position: relative;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
   display: block;
 }
 header .hamburger span:nth-child(1) {
@@ -1736,6 +1735,18 @@ header .hamburger span:nth-child(1) {
 }
 header .hamburger span:nth-child(2) {
   margin: 11px 0;
+}
+header .hamburger span:nth-child(3) {
+  visibility: hidden;
+  top: -15px;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+header .hamburger span:nth-child(4) {
+  visibility: hidden;
+  top: -16px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
 }
 header p {
   font-family: "Outfit", sans-serif;
@@ -1746,15 +1757,19 @@ header p {
   position: absolute;
   right: -6px;
 }
-header .hamburger.active span:nth-child(1) {
-  top: 0;
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
-}
+header .hamburger.active span:nth-child(1),
 header .hamburger.active span:nth-child(2) {
-  top: -12px;
-  -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
+  visibility: hidden;
+}
+header .hamburger.active span:nth-child(3) {
+  visibility: inherit;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header .hamburger.active span:nth-child(4) {
+  visibility: inherit;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 header .sns {
   position: fixed;
@@ -1778,8 +1793,8 @@ header .sns {
   z-index: 999;
 }
 header .sns a {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 header .sns a:hover {
   opacity: 0.7;
@@ -1980,7 +1995,6 @@ footer .menu .privacy .small:hover a {
 }
 @media (max-width: 768px) {
   footer .menu .privacy .small {
-    padding-top: 13px;
     padding-left: 0;
   }
 }
@@ -2016,6 +2030,11 @@ footer .menu .privacy .box {
 }
 footer .menu .privacy .box img {
   padding-right: 20px;
+}
+@media (max-width: 768px) {
+  footer .menu .privacy .box img {
+    margin-bottom: 67px;
+  }
 }
 footer .menu .privacy .box::after {
   content: "";
@@ -2182,9 +2201,7 @@ section.homeAbout .heading {
   line-height: 1.5;
   position: relative;
   padding-top: 10px;
-  background: url(../images/home/homeIcon1.png) no-repeat top 0 left 0, url(../images/home/homeIcon2.png) no-repeat bottom 0 right 0;
-  background: -webkit-image-set(url(../images/home/homeIcon1.png) 1x, url(../images/home/homeIcon1@2x.png) 2x) no-repeat top 0 left 0, -webkit-image-set(url(../images/home/homeIcon2.png) 1x, url(../images/home/homeIcon2@2x.png) 2x) no-repeat bottom 0 right 0;
-  background: image-set(url(../images/home/homeIcon1.png) 1x, url(../images/home/homeIcon1@2x.png) 2x) no-repeat top 0 left 0, image-set(url(../images/home/homeIcon2.png) 1x, url(../images/home/homeIcon2@2x.png) 2x) no-repeat bottom 0 right 0;
+  background: url(../images/home/homeIcon1.svg) no-repeat top 0 left 0, url(../images/home/homeIcon2.svg) no-repeat bottom 0 right 0;
 }
 @media (max-width: 768px) {
   section.homeAbout .heading {
@@ -2234,17 +2251,13 @@ section.homeService .heading {
   max-width: 960px;
   margin: 0 auto 160px;
   padding: 44px 22px 35px;
-  background: url(../images/home/homeIcon3.png) no-repeat top 0 left 0, url(../images/home/homeIcon4.png) no-repeat top 0 right 0, url(../images/home/homeIcon5.png) no-repeat bottom 0 left 0, url(../images/home/homeIcon6.png) no-repeat bottom 0 right 0;
-  background: -webkit-image-set(url(../images/home/homeIcon3.png) 1x, url(../images/home/homeIcon3@2x.png) 2x) no-repeat top 0 left 0, -webkit-image-set(url(../images/home/homeIcon4.png) 1x, url(../images/home/homeIcon4@2x.png) 2x) no-repeat top 0 right 0, -webkit-image-set(url(../images/home/homeIcon6.png) 1x, url(../images/home/homeIcon6@2x.png) 2x) no-repeat bottom 0 right 0;
-  background: image-set(url(../images/home/homeIcon3.png) 1x, url(../images/home/homeIcon3@2x.png) 2x) no-repeat top 0 left 0, image-set(url(../images/home/homeIcon4.png) 1x, url(../images/home/homeIcon4@2x.png) 2x) no-repeat top 0 right 0, image-set(url(../images/home/homeIcon6.png) 1x, url(../images/home/homeIcon6@2x.png) 2x) no-repeat bottom 0 right 0;
+  background: url(../images/home/homeIcon3.svg) no-repeat top 0 left 0, url(../images/home/homeIcon4.svg) no-repeat top 0 right 0, url(../images/home/homeIcon5.svg) no-repeat bottom 0 left 0, url(../images/home/homeIcon6.svg) no-repeat bottom 0 right 0;
 }
 @media (max-width: 768px) {
   section.homeService .heading {
     padding-top: 35px;
     margin-bottom: 80px;
-    background: url(../images/home/homeIcon3-sp.png) no-repeat top 0 left 0, url(../images/home/homeIcon4-sp.png) no-repeat top 0 right 0, url(../images/home/homeIcon5-sp.png) no-repeat bottom 0 left 0, url(../images/home/homeIcon6-sp.png) no-repeat bottom 0 right 0;
-    background: -webkit-image-set(url(../images/home/homeIcon3-sp.png) 1x, url(../images/home/homeIcon3-sp@2x.png) 2x) no-repeat top 0 left 0, -webkit-image-set(url(../images/home/homeIcon4-sp.png) 1x, url(../images/home/homeIcon4-sp@2x.png) 2x) no-repeat top 0 right 0, -webkit-image-set(url(../images/home/homeIcon5-sp.png) 1x, url(../images/home/homeIcon5-sp@2x.png) 2x) no-repeat bottom 0 left 0, -webkit-image-set(url(../images/home/homeIcon6-sp.png) 1x, url(../images/home/homeIcon6-sp@2x.png) 2x) no-repeat bottom 0 right 0;
-    background: image-set(url(../images/home/homeIcon3-sp.png) 1x, url(../images/home/homeIcon3-sp@2x.png) 2x) no-repeat top 0 left 0, image-set(url(../images/home/homeIcon4-sp.png) 1x, url(../images/home/homeIcon4-sp@2x.png) 2x) no-repeat top 0 right 0, image-set(url(../images/home/homeIcon5-sp.png) 1x, url(../images/home/homeIcon5-sp@2x.png) 2x) no-repeat bottom 0 left 0, image-set(url(../images/home/homeIcon6-sp.png) 1x, url(../images/home/homeIcon6-sp@2x.png) 2x) no-repeat bottom 0 right 0;
+    background: url(../images/home/homeIcon3-sp.svg) no-repeat top 0 left 0, url(../images/home/homeIcon4-sp.svg) no-repeat top 0 right 0, url(../images/home/homeIcon5-sp.svg) no-repeat bottom 0 left 0, url(../images/home/homeIcon6-sp.svg) no-repeat bottom 0 right 0;
   }
 }
 section.homeService .heading h3.intro {
