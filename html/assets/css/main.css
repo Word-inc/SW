@@ -1792,6 +1792,7 @@ header .sns a:hover {
   }
 }
 
+/** @format */
 footer {
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(#979da2), to(#bdc2c5));
@@ -1885,7 +1886,10 @@ footer .menu ul li {
   letter-spacing: 0.1em;
   position: relative;
 }
-footer .menu ul li:hover a {
+footer .menu ul li a {
+  display: inline-block;
+}
+footer .menu ul li a:hover {
   color: #97a0a8;
 }
 @media (max-width: 768px) {

@@ -1,3 +1,5 @@
+/** @format */
+
 // FOOTER
 footer {
 	width: 100%;
@@ -67,8 +69,11 @@ footer {
 				padding: 0 18px;
 				letter-spacing: 0.1em;
 				position: relative;
-				&:hover a {
-					color: #97a0a8;
+				a {
+					display: inline-block;
+					&:hover {
+						color: #97a0a8;
+					}
 				}
 				@include ipad {
 					padding: 0;
@@ -121,7 +126,7 @@ footer {
 				}
 			}
 		}
-    .privacy {
+		.privacy {
 			margin-top: 41px;
 			text-align: right;
 			@include ipad {
