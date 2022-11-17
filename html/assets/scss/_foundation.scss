@@ -194,9 +194,9 @@ body {
 			}
 			&:hover::before {
 				content: "";
-				left: 2.5%;
-				width: 95%;
-				height: 90%;
+				left: calc(100 - 96.66666666666667);
+				width: 96.66666666666667%;
+				height: 92.85714285714286%;
 				opacity: 1;
 			}
 			&:hover::after {
