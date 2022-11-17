@@ -72,7 +72,7 @@
 			}
 			.container {
 				width: 100%;
-				background-color: #e2e4e6;
+				background-color: rgba(226,228,230,.3);
 				padding: 60px 60px 60px 100px;
 				line-height: 2;
 				@include ipad {
@@ -129,13 +129,20 @@
 						}
 						.num {
 							line-height: 1.2;
-							padding: 14px 0;
-							font-size: 1.6rem;
+							padding: 15px 0;
+							font-size: 2.8rem;
 							@include subFont;
 							span {
 								display: block;
 								font-size: 1.2rem;
 								letter-spacing: 0.1em;
+							}
+							@include ipad{
+								font-size: 2.0rem;
+								padding: 11px 0 12.5px;
+								span{
+									font-size: .9rem;
+								}
 							}
 						}
 					}
