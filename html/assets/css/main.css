@@ -752,15 +752,15 @@ body {
   position: absolute;
   content: "";
   opacity: 0;
-  height: 80%;
-  width: 85%;
+  height: 86%;
+  width: 90%;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 5%;
   border: solid #fff 1px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .c-Contact .container a::after {
   position: absolute;
@@ -780,7 +780,7 @@ body {
 }
 .c-Contact .container a:hover::before {
   content: "";
-  left: 3.3333333333;
+  left: 1.66666666%;
   width: 96.6666666667%;
   height: 92.8571428571%;
   opacity: 1;

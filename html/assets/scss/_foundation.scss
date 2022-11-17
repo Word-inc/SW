@@ -171,13 +171,13 @@ body {
 				position: absolute;
 				content: "";
 				opacity: 0;
-				height: 80%;
-				width: 85%;
+				height: 86%;
+				width: 90%;
 				top: 50%;
 				transform: translateY(-50%);
 				left: 5%;
 				border: solid #fff 1px;
-				transition: 0.4s;
+				transition: 0.2s;
 			}
 			&::after {
 				position: absolute;
@@ -194,7 +194,7 @@ body {
 			}
 			&:hover::before {
 				content: "";
-				left: calc(100 - 96.66666666666667);
+				left: 1.66666666%;
 				width: 96.66666666666667%;
 				height: 92.85714285714286%;
 				opacity: 1;
