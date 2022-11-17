@@ -1,0 +1,340 @@
+/** @format */
+
+@charset "utf-8";
+// トップ画面
+section.homeHero.over768 {
+	width: 100%;
+	position: relative;
+	.heroImg {
+		width: 79.5vw;
+		margin-left: auto;
+		text-align: right;
+		img {
+			height: 115vh;
+			object-fit: cover;
+		}
+	}
+	.homeText {
+		display: block;
+		position: absolute;
+		left: 6vw;
+		top: 15.5vw;
+		img {
+			width: 100%;
+			object-fit: cover;
+			@include wide{
+				width: 20vw;
+			}
+		}
+	}
+	.homeLink {
+		position: fixed;
+		bottom: 4vw;
+		right: 30px;
+		z-index: 20;
+		transition: 0.4s;
+		img {
+			width: 100%;
+			object-fit: cover;
+			@include wide{
+				width: 13vw;
+			}
+		}
+	}
+}
+section.homeHero.under768 {
+	text-align: center;
+	position: relative;
+	padding-top: 17vh;
+	.homeText {
+		position: relative;
+		img {
+			height: 29vh;
+			object-fit: cover;
+		}
+	}
+	.heroImg {
+		width: 100%;
+		margin-top: -2vh;
+		img {
+			width: 100%;
+			height: 63vh;
+			object-fit: cover;
+		}
+	}
+	.homeLink {
+		width: 84%;
+		position: fixed;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 20;
+		transition: 0.4s;
+		bottom: 2vw;
+	}
+}
+.js-hidden {
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.4s;
+}
+// ABOUT
+section.homeAbout {
+	text-align: center;
+	background: url(../images/home/homeBg1.png) no-repeat center center;
+	background: image-set(url(../images/home/homeBg1.png) 1x, url(../images/home/homeBg1@2x.png) 2x) no-repeat center center;
+	background-size: cover;
+	margin-top: -10vw;
+	padding: 18vw 30px 140px;
+	@include ipad {
+		margin-top: 0;
+		padding: 60px 30px 80px;
+		background: url(../images/home/homeBg1-sp.png) no-repeat center center;
+		background: image-set(url(../images/home/homeBg1-sp.png) 1x, url(../images/home/homeBg1@2x-sp.png) 2x) no-repeat center center;
+		background-size: cover;
+	}
+	h2 {
+		@include subFont;
+		font-size: 2rem;
+		letter-spacing: 0.1em;
+		@include ipad {
+			font-size: 1.6rem;
+		}
+		img {
+			padding-bottom: 15px;
+			@include ipad {
+				padding-bottom: 10px;
+			}
+		}
+	}
+	.desc {
+		line-height: 2;
+		@include ipad {
+			font-size: 1.32rem;
+		}
+	}
+	.heading {
+		font-size: 3.6rem;
+		margin: 37px auto;
+		max-width: 420px;
+		height: 128px;
+		letter-spacing: 0.05em;
+		line-height: 1.5;
+		position: relative;
+		padding-top: 10px;
+		background: url(../images/home/homeIcon1.png) no-repeat top 0 left 0, url(../images/home/homeIcon2.png) no-repeat bottom 0 right 0;
+		background: image-set(url(../images/home/homeIcon1.png) 1x, url(../images/home/homeIcon1@2x.png) 2x) no-repeat top 0 left 0, image-set(url(../images/home/homeIcon2.png) 1x, url(../images/home/homeIcon2@2x.png) 2x) no-repeat bottom 0 right 0;
+		@include ipad {
+			max-width: 270px;
+			height: 84px;
+			font-size: 2.16rem;
+			margin: 30px auto 20px;
+		}
+		&::before,
+		&::after {
+			content: "";
+			width: 30px;
+			height: 55px;
+			display: inline-block;
+			position: absolute;
+		}
+		span {
+			color: #e58ec0;
+		}
+	}
+}
+
+//SERVICE
+section.homeService {
+	padding: 140px 30px 160px;
+	@include ipad {
+		padding: 80px 30px 100px;
+	}
+	h2 {
+		text-align: center;
+		@include subFont;
+		font-size: 5.6rem;
+		letter-spacing: 0.1em;
+		margin-bottom: 64px;
+		@include ipad {
+			font-size: 3.36rem;
+			margin-bottom: 30px;
+		}
+		img {
+			padding-bottom: 10px;
+		}
+	}
+	.heading {
+		max-width: 960px;
+		margin: 0 auto 160px;
+		padding: 44px 22px 35px;
+		background: url(../images/home/homeIcon3.png) no-repeat top 0 left 0, url(../images/home/homeIcon4.png) no-repeat top 0 right 0, url(../images/home/homeIcon5.png) no-repeat bottom 0 left 0, url(../images/home/homeIcon6.png) no-repeat bottom 0 right 0;
+		background: image-set(url(../images/home/homeIcon3.png) 1x,url(../images/home/homeIcon3@2x.png)2x)no-repeat top 0 left 0,image-set(url(../images/home/homeIcon4.png) 1x,url(../images/home/homeIcon4@2x.png) 2x)no-repeat top 0 right 0,image-set(url(../images/home/homeIcon6.png)1x ,url(../images/home/homeIcon6@2x.png) 2x) no-repeat bottom 0 right 0;
+		@include ipad {
+			padding-top: 35px;
+			margin-bottom: 80px;
+			background: url(../images/home/homeIcon3-sp.png) no-repeat top 0 left 0, url(../images/home/homeIcon4-sp.png) no-repeat top 0 right 0, url(../images/home/homeIcon5-sp.png) no-repeat bottom 0 left 0, url(../images/home/homeIcon6-sp.png) no-repeat bottom 0 right 0;
+			background: image-set(url(../images/home/homeIcon3-sp.png) 1x,url(../images/home/homeIcon3-sp@2x.png) 2x) no-repeat top 0 left 0, image-set(url(../images/home/homeIcon4-sp.png) 1x,url(../images/home/homeIcon4-sp@2x.png)2x)no-repeat top 0 right 0,image-set(url(../images/home/homeIcon5-sp.png)1x,url(../images/home/homeIcon5-sp@2x.png)2x)no-repeat bottom 0 left 0,image-set(url(../images/home/homeIcon6-sp.png)1x,url(../images/home/homeIcon6-sp@2x.png)2x)no-repeat bottom 0 right 0;
+		}
+		h3.intro {
+			text-align: center;
+			font-size: 2.4rem;
+			letter-spacing: 0.05em;
+			@include ipad {
+				font-size: 1.92rem;
+			}
+		}
+	}
+	.listBox {
+		margin: auto;
+		max-width: 670px;
+		display: flex;
+		padding: 35px 0;
+		@include ipad {
+			display: block;
+			padding-top: 20px;
+			padding-bottom: 25px;
+			font-size: 1.32rem;
+		}
+		.list {
+			width: 50%;
+			@include ipad {
+				width: 100%;
+				margin: auto;
+			}
+			li {
+				list-style: none;
+				position: relative;
+				padding-left: 10px;
+				line-height: 2;
+			}
+			li:before {
+				border-radius: 50%;
+				width: 3px;
+				height: 3px;
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 15px;
+				content: "";
+				background: #e58ec0;
+			}
+		}
+	}
+	.desc {
+		padding-top: 35px;
+		max-width: 800px;
+		margin: auto;
+		border-top: 1px solid #e2e4e6;
+		line-height: 2;
+		@include ipad {
+			font-size: 1.32rem;
+			padding-top: 25px;
+		}
+	}
+	.container {
+		display: flex;
+		justify-content: space-between;
+		gap: 80px;
+		margin-bottom: 100px;
+		@include ipad {
+			display: block;
+			gap: 0px;
+		}
+		img {
+			width: 51%;
+			height: 100%;
+			@include ipad {
+				width: 100%;
+			}
+		}
+		.txt {
+			max-width: 42.5%;
+			padding-top: 2.5vw;
+			line-height: 2;
+			letter-spacing: 0;
+			padding-right: 80px;
+			@include ipad {
+				max-width: 100%;
+				padding-right: 0;
+				font-size: 1.32rem;
+			}
+			h3 {
+				font-size: 2.4rem;
+				font-weight: 500;
+				letter-spacing: 0.05em;
+				margin-bottom: 1vw;
+				@include ipad {
+					font-size: 1.92rem;
+				}
+			}
+			.c-Btn {
+				display: block;
+				margin-left: auto;
+				@include ipad {
+					margin: 60px auto 0;
+				}
+			}
+		}
+		&:nth-of-type(odd) {
+			flex-direction: row-reverse;
+			margin-bottom: 0;
+			.txt {
+				padding-right: 0;
+				padding-left: 80px;
+				max-width: 41.5%;
+				@include ipad {
+					max-width: 100%;
+					padding-left: 0;
+				}
+			}
+		}
+	}
+}
+
+// SNS
+.homeSns {
+	h2 {
+		text-align: center;
+		@include subFont;
+		font-size: 5.6rem;
+		letter-spacing: 0.1em;
+		margin-bottom: 64px;
+		@include ipad {
+			font-size: 3.36rem;
+		}
+		img {
+			padding-bottom: 10px;
+		}
+	}
+	.container {
+		display: flex;
+		max-width: 1100px;
+		margin: auto;
+		padding: 0 30px;
+		gap: 80px;
+		@include ipad {
+			display: block;
+		}
+		.box {
+			width: 46.5%;
+			@include ipad {
+				width: 100%;
+			}
+			h3.ttl {
+				@include subFont;
+				font-size: 2rem;
+				letter-spacing: 0.1em;
+				display: flex;
+				align-items: center;
+				padding: 18px 0 17px;
+				margin-bottom: 40px;
+				border-top: 1px solid #1b2d3e;
+				border-bottom: 1px solid #e2e4e6;
+				img {
+					padding-right: 20px;
+				}
+			}
+		}
+	}
+}
+

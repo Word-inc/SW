@@ -1,0 +1,188 @@
+/** @format */
+
+@charset "utf-8";
+.contactMain {
+	margin-bottom: 185px;
+	@include ipad {
+		padding-top: 85px;
+		margin-bottom: 127px;
+	}
+	.wrap {
+		max-width: 1200px;
+	}
+
+	.box {
+		display: flex;
+		justify-content: flex-start;
+		gap: 40px;
+		line-height: 2;
+
+		&:nth-of-type(2),
+		&:nth-of-type(3) {
+			margin-top: 151px;
+
+			@include ipad {
+				margin-top: 100px;
+			}
+		}
+
+		@include ipad {
+			display: block;
+		}
+
+		h3 {
+			width: 16.66666666666667%;
+			@include subFont;
+			font-size: 2rem;
+			padding-left: 15px;
+			letter-spacing: 0.1em;
+			position: relative;
+
+			@include ipad {
+				width: 100%;
+				font-size: 1.6rem;
+				padding-left: 10px;
+				margin-bottom: 25px;
+			}
+			&::before {
+				content: "";
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: #e58ec0;
+				top: 0;
+				left: 0;
+				position: absolute;
+				@include ipad {
+					width: 8px;
+					height: 8px;
+				}
+			}
+		}
+		.txt {
+			margin-top: 20px;
+			width: calc(100% - 16.66666666666667% - 40px);
+			@include ipad {
+				width: 100%;
+				font-size: 1.32rem;
+			}
+			.intro {
+				line-height: calc(30 / 16);
+				margin-bottom: 90px;
+				@include ipad {
+					margin-bottom: 60px;
+				}
+			}
+		}
+	}
+}
+form {
+	.formItem {
+		margin-bottom: 35px;
+		&:last-of-type{
+			margin-bottom: 0;
+		}
+		@include ipad {
+			margin-bottom: 30px;
+		}
+		.formLabel {
+			font-weight: 500;
+			margin-bottom: 5px;
+			display: block;
+			span {
+				margin-left: 5px;
+				color: #e58ec0;
+			}
+		}
+		input {
+			display: block;
+			width: 100%;
+			padding: 23px 20px;
+			background-color: #e2e4e6;
+			@include ipad {
+				padding: 16px 10px;
+			}
+			&[type="radio"] {
+				width: 15px;
+				height: 15px;
+				display: inline;
+				margin-left: 58px;
+				@include ipad {
+					margin-left: 20px;
+				}
+				&:first-of-type {
+					margin-left: 0;
+				}
+			}
+		}
+		textarea {
+			width: 100%;
+			background-color: #e2e4e6;
+			padding: 23px 20px;
+			min-height: 190px;
+			resize: vertical;
+			@include ipad {
+				padding: 16px 10px;
+			}
+		}
+	}
+	.formBtn.c-Btn {
+		text-align: center;
+		display: block;
+		&::before {
+			content: "";
+			position: absolute;
+			display: inline-block;
+			width: 20px;
+			height: 8px;
+			background: url(../images/common/arrow1.png);
+			background: image-set(url(../images/common/arrow1.png) 1x, url(../images/common/arrow1@2x.png) 2x);
+			top: 29px;
+			right: 20px;
+			z-index: 20;
+		}
+		input {
+			background-color: transparent;
+			padding: 0;
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: relative;
+			z-index: 10;
+			border: solid #1b2d3e 1px;
+		}
+	}
+}
+.formBtnBox{
+  max-width: 560px;
+  margin: 80px auto 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  @include ipad{
+    display: block;
+    margin-top: 60px;
+  }
+  .c-Btn{
+    margin-top: 0;
+    display: block;
+    margin: auto;
+  }
+  .formBtn.c-Btn.c-BtnBack {
+    color: #97A0A8;
+		&::before {
+			content: "";
+			background: url(../images/common/arrow2.png);
+			background: image-set(url(../images/common/arrow2.png) 1x, url(../images/common/arrow2@2x.png) 2x);
+			left: 20px;
+		}
+    &::after{
+      border-right: 1px #97A0A8 solid;
+		  border-bottom: 1px #97A0A8 solid;
+    }
+		input {
+			border: solid #97A0A8 1px;
+		}
+	}
+}
+

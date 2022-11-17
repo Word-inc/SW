@@ -1,0 +1,196 @@
+/** @format */
+
+@charset "utf-8";
+
+.aboutMain {
+	.wrap {
+		max-width: 1200px;
+	}
+
+	.box {
+		display: flex;
+		justify-content: flex-start;
+		gap: 40px;
+		line-height: 2;
+
+		&:nth-of-type(2),
+		&:nth-of-type(3) {
+			margin-top: 151px;
+
+			@include ipad {
+				margin-top: 100px;
+			}
+		}
+
+		@include ipad {
+			display: block;
+		}
+
+		h3 {
+			width: 16.66666666666667%;
+			@include subFont;
+			font-size: 2rem;
+			padding-left: 15px;
+			letter-spacing: 0.1em;
+			position: relative;
+
+			@include ipad {
+				width: 100%;
+				font-size: 1.6rem;
+				padding-left: 10px;
+				margin-bottom: 25px;
+			}
+			&::before {
+				content: "";
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: #e58ec0;
+				top: 0;
+				left: 0;
+				position: absolute;
+				@include ipad {
+					width: 8px;
+					height: 8px;
+				}
+			}
+		}
+
+		.txt {
+			width: calc(100% - 16.66666666666667% - 40px);
+			display: flex;
+			justify-content: space-between;
+			margin-top: 17px;
+
+			@include ipad {
+				display: block;
+				width: 100%;
+			}
+
+			h4 {
+				width: 32.29166666666667%;
+				font-size: 2.8rem;
+				letter-spacing: 0.05em;
+				line-height: calc(50 / 28);
+
+				@include ipad {
+					width: 100%;
+					font-size: 2.1rem;
+					margin-top: 34px;
+					line-height: calc(37.5 / 21);
+				}
+			}
+
+			.message {
+				width: calc(100% - 32.29166666666667%);
+
+				@include ipad {
+					width: 100%;
+					margin-top: 23px;
+					font-size: 1.32rem;
+				}
+			}
+
+			.name {
+				margin-top: 30px;
+				margin-left: auto;
+				max-width: 181px;
+				@include ipad {
+					width: 148px;
+					margin-top: 15px;
+				}
+				span {
+					font-size: 2rem;
+					@include ipad {
+						font-size: 1.6rem;
+					}
+				}
+			}
+		}
+
+		.info {
+			width: calc(100% - 16.66666666666667% - 40px);
+			margin-top: 20px;
+
+			@include ipad {
+				width: 100%;
+			}
+
+			div {
+				display: flex;
+				justify-content: flex-start;
+				&:last-of-type dd {
+					padding-top: 46px;
+					padding-bottom: 50px;
+					@include ipad {
+						padding-top: 27px;
+                        padding-bottom: 32px;
+					}
+				}
+
+				@include ipad {
+					font-size: 1.32rem;
+				}
+
+				dt {
+					padding: 35px 0;
+					width: 15.625%;
+					border-top: 1px solid #97a0a8;
+					@include ipad {
+						width: 25.3968253968254%;
+						padding: 26px 0;
+					}
+				}
+
+				dd {
+					padding: 35px 0 35px 40px;
+					width: calc(100% - 15.625%);
+					border-top: 1px solid #e2e4e6;
+
+					@include ipad {
+						width: calc(100% - 25.3968253968254%);
+						padding: 26px 0 26px 20px;
+					}
+				}
+				img {
+					margin-right: 36px;
+					@include ipad {
+						display: block;
+						margin-bottom: 18px;
+						&:nth-of-type(1) {
+							margin-bottom: 10px;
+							width: 230px;
+							@include ipad {
+								width: 184px;
+							}
+						}
+                        &:nth-of-type(2){
+                            width: 120px;
+                        }
+                        &:nth-of-type(3){
+                            width: 107px;
+                        }
+                        &:nth-of-type(4){
+                            width: 56px;
+                            margin-bottom: 0;
+                        }
+					}
+				}
+			}
+		}
+
+		.map {
+			width: calc(100% - 16.66666666666667% - 40px);
+			height: 410px;
+			margin-top: 20px;
+			iframe {
+				width: 100%;
+				height: 100%;
+			}
+			@include ipad {
+				width: 100%;
+				height: 300px;
+			}
+		}
+	}
+}

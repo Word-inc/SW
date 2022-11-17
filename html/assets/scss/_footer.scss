@@ -1,0 +1,177 @@
+// FOOTER
+footer {
+	width: 100%;
+	background: linear-gradient(to right, #979da2, #bdc2c5);
+	color: #fff;
+	padding: 125px 30px 100px;
+	@include ipad {
+		padding: 60px 30px 40px;
+	}
+	.wrap {
+		max-width: 1200px;
+		display: flex;
+		justify-content: space-between;
+		@include ipad {
+			display: block;
+		}
+	}
+	.info {
+		.name {
+			font-size: 2.8rem;
+			letter-spacing: 0.1em;
+			padding-bottom: 46px;
+			line-height: 1;
+			@include ipad {
+				font-size: 2.4rem;
+				padding-bottom: 31px;
+			}
+		}
+		.tel {
+			@include subFont;
+			font-size: 2rem;
+			letter-spacing: 0.1em;
+			padding: 13px 0 40px;
+			@include ipad {
+				font-size: 1.6rem;
+			}
+		}
+		p {
+			line-height: 1.875;
+			@include ipad {
+				font-size: 1.32rem;
+			}
+		}
+		.sns {
+			display: inline-block;
+			margin-right: 20px;
+		}
+		.sns img {
+			width: 45px;
+			height: 45px;
+			text-align: center;
+			line-height: 45px;
+			border-radius: 50%;
+			background: #fff;
+		}
+	}
+	.menu {
+		ul {
+			display: flex;
+			@include ipad {
+				padding-top: 60px;
+				display: block;
+			}
+			li {
+				@include subFont;
+				font-size: 2rem;
+				padding: 0 18px;
+				letter-spacing: 0.1em;
+				position: relative;
+				&:hover a {
+					color: #97a0a8;
+				}
+				@include ipad {
+					padding: 0;
+					display: flex;
+					align-items: center;
+					padding-bottom: 20px;
+				}
+				&:last-of-type {
+					padding-right: 0;
+					&::after {
+						content: none;
+					}
+				}
+				&::after {
+					content: "";
+					display: inline-block;
+					width: 1px;
+					height: 12px;
+					background-color: #fff;
+					position: absolute;
+					top: 5px;
+					right: 0;
+					transform: rotate(15deg);
+					@include ipad {
+						content: none;
+					}
+				}
+				span {
+					display: block;
+					font-size: 1.2rem;
+					color: #e2e4e6;
+					padding-top: 5px;
+					@include ipad {
+						padding-top: 0;
+						display: inline-block;
+						padding-left: 15px;
+						position: relative;
+						&::before {
+							content: "";
+							display: inline-block;
+							width: 1px;
+							height: 12px;
+							background-color: #fff;
+							position: absolute;
+							top: 0px;
+							left: 7px;
+							transform: rotate(15deg);
+						}
+					}
+				}
+			}
+		}
+    .privacy {
+			margin-top: 41px;
+			text-align: right;
+			@include ipad {
+				text-align: left;
+				margin-top: 17px;
+			}
+			.small {
+				font-size: 1.2rem;
+				letter-spacing: 0.1em;
+				@include subFont;
+			}
+			.box {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				margin-bottom: 140px;
+				@include ipad {
+					display: block;
+					margin-bottom: 59px;
+				}
+				img {
+					padding-right: 20px;
+				}
+				.small {
+					padding-left: 20px;
+					position: relative;
+					letter-spacing: 0;
+					@include ipad {
+						padding-top: 13px;
+						padding-left: 0;
+					}
+					&:hover a {
+						color: #97a0a8;
+					}
+					&::after {
+						content: "";
+						display: inline-block;
+						width: 1px;
+						height: 12px;
+						background-color: #fff;
+						position: absolute;
+						top: 5px;
+						left: 0;
+						transform: rotate(15deg);
+						@include ipad {
+							content: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}

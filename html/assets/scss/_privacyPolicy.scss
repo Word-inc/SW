@@ -1,0 +1,115 @@
+/** @format */
+
+@charset "utf-8";
+
+.privacyMain {
+  .c-Ttl{
+    margin-top: 80px;
+    }
+  .wrap {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    gap: 40px;
+    position: relative;
+
+    @include ipad {
+      display: block;
+    }
+
+    .blank {
+      width: 16.6666666%;
+
+      @include ipad {
+        width: 0;
+      }
+    }
+
+    .container {
+      width: 80%;
+      line-height: calc(32 / 16);
+      .intro{
+        @include ipad{
+          margin-bottom: 60px;
+        }
+      }
+
+      @include ipad {
+        width: 100%;
+        font-size: 1.32rem;
+        letter-spacing: 0;
+        line-height: 2;
+      }
+
+      .txtBox {
+        margin-top: 54px;
+        @include ipad{
+          margin-top: 34px;
+        }
+
+        h3 {
+          font-size: 2.4rem;
+          font-weight: 500;
+          letter-spacing: .05em;
+          line-height: 1;
+
+          @include ipad {
+            font-size: 1.92rem;
+            line-height: calc(30 / 19.2);
+          }
+        }
+
+        .txt {
+          margin-top: 43px;
+
+          @include ipad {
+            margin-top: 30px;
+          }
+
+          &:first-of-type {
+            margin-top: 17px;
+
+            @include ipad {
+              margin-top: 19px;
+            }
+          }
+
+          h4 {
+            font-size: 2.0rem;
+            line-height: 1;
+            margin-bottom: 10px;
+
+            @include ipad {
+              font-size: 1.6rem;
+            }
+          }
+        }
+
+        ul {
+          margin-top: 16px;
+          list-style: decimal;
+          padding-left: 17px;
+
+          @include ipad {
+            margin-top: 17px;
+          }
+
+          li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+
+            @include ipad {
+              margin-bottom: 7px;
+              line-height: calc(21.45/13.2);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+/** @format */
+
+@charset "utf-8";
+.contactCheckMain {
+	padding-top: 135px;
+	margin-bottom: 250px;
+	@include ipad {
+		padding-top: 55px;
+		margin-bottom: 100px;
+	}
+	.wrap {
+		display: block;
+		.hide {
+			display: hidden;
+			width: 16.66666666666667%;
+		}
+		h4 {
+			font-size: 2rem;
+			font-weight: 500;
+			margin-bottom: 14px;
+			@include ipad {
+				font-size: 1.6rem;
+				margin-bottom: 5px;
+			}
+		}
+		p {
+			line-height: 2;
+			margin-bottom: 43px;
+			@include ipad {
+				font-size: 1.32rem;
+				margin-bottom: -9px;
+			}
+		}
+		.formBtnBox {
+			position: relative;
+			.c-Btn {
+				position: absolute;
+				&:first-of-type {
+					left: -22px;
+				}
+				&:last-of-type {
+					right: 27px;
+				}
+			}
+			@include ipad {
+				margin-top: 100px;
+				position: static;
+				.c-Btn {
+					margin-bottom: 35px;
+					position: relative;
+					&:first-of-type {
+						left: 0;
+					}
+					&:last-of-type {
+						right: 0;
+					}
+				}
+			}
+		}
+	}
+}
