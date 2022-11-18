@@ -127,11 +127,14 @@ body {
 	.container {
 		display: flex;
 		width: 100%;
-		background: linear-gradient(to right, #b1b6f1, #e4a3ca);
 		color: #fff;
+		background: url(../images/common/bg1.png) no-repeat;
 		height: 280px;
+		max-width: 1200px;
+		object-fit: cover;
 		position: relative;
 		@include small {
+			background: url(../images/common/bg1-sp.png) no-repeat;
 			height: 300px;
 			flex-direction: column;
 		}

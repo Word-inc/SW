@@ -684,15 +684,17 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#b1b6f1), to(#e4a3ca));
-  background: -webkit-linear-gradient(left, #b1b6f1, #e4a3ca);
-  background: linear-gradient(to right, #b1b6f1, #e4a3ca);
   color: #fff;
+  background: url(../images/common/bg1.png) no-repeat;
   height: 280px;
+  max-width: 1200px;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
 }
 @media (max-width: 428px) {
   .c-Contact .container {
+    background: url(../images/common/bg1-sp.png) no-repeat;
     height: 300px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
