@@ -103,6 +103,8 @@ section.homeAbout {
 			padding-bottom: 15px;
 			@include ipad {
 				padding-bottom: 10px;
+				width: 34px;
+				height: 48px;
 			}
 		}
 	}
@@ -121,7 +123,8 @@ section.homeAbout {
 		line-height: 1.5;
 		position: relative;
 		padding-top: 10px;
-		background: url(../images/home/homeIcon1.svg) no-repeat top 0 left 0, url(../images/home/homeIcon2.svg) no-repeat bottom 0 right 0;
+		background: url(../images/home/homeIcon1.png) no-repeat top 0 left 0, url(../images/home/homeIcon2.png) no-repeat bottom 0 right 0;
+		background: image-set(url(../images/home/homeIcon1.png)1x,url(../images/home/homeIcon1@2x.png)2x)no-repeat top 0 left 0,image-set(url(../images/home/homeIcon2.png)1x,url(../images/home/homeIcon2@2x.png)2x)no-repeat bottom 0 right 0;
 		@include ipad {
 			max-width: 270px;
 			height: 84px;
@@ -166,11 +169,14 @@ section.homeService {
 		max-width: 960px;
 		margin: 0 auto 160px;
 		padding: 44px 22px 35px;
-		background: url(../images/home/homeIcon3.svg) no-repeat top 0 left 0, url(../images/home/homeIcon4.svg) no-repeat top 0 right 0, url(../images/home/homeIcon5.svg) no-repeat bottom 0 left 0, url(../images/home/homeIcon6.svg) no-repeat bottom 0 right 0;
+		background: url(../images/home/homeIcon3.png) no-repeat top 0 left 0, url(../images/home/homeIcon4.png) no-repeat top 0 right 0, url(../images/home/homeIcon5.png) no-repeat bottom 0 left 0, url(../images/home/homeIcon6.png) no-repeat bottom 0 right 0;
+		background: image-set(url(../images/home/homeIcon3.png)1x,url(../images/home/homeIcon3@2x.png)2x)no-repeat top 0 left 0,image-set(url(../images/home/homeIcon4.png)1x,url(../images/home/homeIcon4@2x.png)2x)no-repeat top 0 right 0,image-set(url(../images/home/homeIcon5.png)1x,url(../images/home/homeIcon5@2x.png)2x)no-repeat bottom 0 left 0,image-set(url(../images/home/homeIcon6.png)1x,url(../images/home/homeIcon6@2x.png)2x)no-repeat bottom 0 right 0;
+
 		@include ipad {
 			padding-top: 35px;
 			margin-bottom: 80px;
-			background: url(../images/home/homeIcon3-sp.svg) no-repeat top 0 left 0, url(../images/home/homeIcon4-sp.svg) no-repeat top 0 right 0, url(../images/home/homeIcon5-sp.svg) no-repeat bottom 0 left 0, url(../images/home/homeIcon6-sp.svg) no-repeat bottom 0 right 0;
+			background: url(../images/home/homeIcon3-sp.png) no-repeat top 0 left 0, url(../images/home/homeIcon4-sp.png) no-repeat top 0 right 0, url(../images/home/homeIcon5-sp.png) no-repeat bottom 0 left 0, url(../images/home/homeIcon6-sp.png) no-repeat bottom 0 right 0;
+			background: image-set(url(../images/home/homeIcon3-sp.png)1x,url(../images/home/homeIcon3-sp@2x.png)2x)no-repeat top 0 left 0,image-set(url(../images/home/homeIcon4-sp.png)1x,url(../images/home/homeIcon4-sp@2x.png)2x)no-repeat top 0 right 0,image-set(url(../images/home/homeIcon5-sp.png)1x,url(../images/home/homeIcon5-sp@2x.png)2x)no-repeat bottom 0 left 0,image-set(url(../images/home/homeIcon6-sp.png)1x,url(../images/home/homeIcon6-sp@2x.png)2x)no-repeat bottom 0 right 0;
 		}
 		h3.intro {
 			text-align: center;
