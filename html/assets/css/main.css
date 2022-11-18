@@ -768,9 +768,7 @@ body {
   opacity: 0;
   width: 30px;
   height: 10px;
-  background: url(../images/home/arrow2.png);
-  background: -webkit-image-set(url(../images/home/arrow2.png), url(../images/home/arrow2@2x.png) 2x);
-  background: image-set(url(../images/home/arrow2.png), url(../images/home/arrow2@2x.png) 2x);
+  background: url(../images/common/arrow3.svg);
   right: 40px;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -790,12 +788,13 @@ body {
 }
 .c-Contact .container a span {
   font-size: 2rem;
-  padding-top: 6px;
+  padding-top: 11px;
   letter-spacing: 0;
 }
 @media (max-width: 768px) {
   .c-Contact .container a span {
     font-size: 1.6rem;
+    padding-top: 8px;
   }
 }
 
@@ -838,9 +837,7 @@ body {
   display: inline-block;
   width: 20px;
   height: 8px;
-  background: url(/assets/images/common/arrow1.png);
-  background: -webkit-image-set(url(/assets/images/common/arrow1.png) 1x, url(/assets/images/common/arrow1@2x.png) 2x);
-  background: image-set(url(/assets/images/common/arrow1.png) 1x, url(/assets/images/common/arrow1@2x.png) 2x);
+  background: url(../images/common/arrow1.svg);
   top: 29px;
   right: 20px;
 }
@@ -1987,8 +1984,7 @@ footer .menu .privacy .small {
   padding-left: 20px;
   position: relative;
   letter-spacing: 0;
-  font-family: "Outfit", sans-serif;
-  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
 }
 footer .menu .privacy .small:hover a {
   color: #97a0a8;
@@ -2001,6 +1997,8 @@ footer .menu .privacy .small:hover a {
 footer .menu .privacy .copyright {
   position: relative;
   left: 37px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
 }
 @media (max-width: 768px) {
   footer .menu .privacy .copyright {
@@ -2033,7 +2031,7 @@ footer .menu .privacy .box img {
 }
 @media (max-width: 768px) {
   footer .menu .privacy .box img {
-    margin-bottom: 67px;
+    margin-bottom: 13px;
   }
 }
 footer .menu .privacy .box::after {
@@ -3238,9 +3236,7 @@ form .formBtn.c-Btn::before {
   display: inline-block;
   width: 20px;
   height: 8px;
-  background: url(../images/common/arrow1.png);
-  background: -webkit-image-set(url(../images/common/arrow1.png) 1x, url(../images/common/arrow1@2x.png) 2x);
-  background: image-set(url(../images/common/arrow1.png) 1x, url(../images/common/arrow1@2x.png) 2x);
+  background: url(../images/common/arrow1.svg);
   top: 29px;
   right: 20px;
   z-index: 20;
@@ -3285,9 +3281,7 @@ form .formBtn.c-Btn input {
 }
 .formBtnBox .formBtn.c-Btn.c-BtnBack::before {
   content: "";
-  background: url(../images/common/arrow2.png);
-  background: -webkit-image-set(url(../images/common/arrow2.png) 1x, url(../images/common/arrow2@2x.png) 2x);
-  background: image-set(url(../images/common/arrow2.png) 1x, url(../images/common/arrow2@2x.png) 2x);
+  background: url(../images/common/arrow2.svg);
   left: 20px;
 }
 .formBtnBox .formBtn.c-Btn.c-BtnBack::after {

@@ -185,8 +185,7 @@ body {
 				opacity: 0;
 				width: 30px;
 				height: 10px;
-				background: url(../images/home/arrow2.png);
-				background: image-set(url(../images/home/arrow2.png), url(../images/home/arrow2@2x.png) 2x);
+				background: url(../images/common/arrow3.svg);;
 				right: 40px;
 				top: 50%;
 				transform: translateY(-50%);
@@ -204,10 +203,11 @@ body {
 			}
 			span {
 				font-size: 2rem;
-				padding-top: 6px;
+				padding-top: 11px;
 				letter-spacing: 0;
 				@include ipad {
 					font-size: 1.6rem;
+					padding-top: 8px;
 				}
 			}
 		}
@@ -255,8 +255,7 @@ body {
 			display: inline-block;
 			width: 20px;
 			height: 8px;
-			background: url(/assets/images/common/arrow1.png);
-			background: image-set(url(/assets/images/common/arrow1.png) 1x, url(/assets/images/common/arrow1@2x.png) 2x);
+			background: url(../images/common/arrow1.svg);
 			top: 29px;
 			right: 20px;
 		}

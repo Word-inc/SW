@@ -140,7 +140,7 @@ footer {
 				padding-left: 20px;
 				position: relative;
 				letter-spacing: 0;
-				@include subFont;
+				@include mainFont;
 				&:hover a {
 					color: #97a0a8;
 				}
@@ -151,6 +151,7 @@ footer {
 			.copyright{
 				position: relative;
 				left: 37px;
+				@include subFont;
 				@include ipad{
 					left: 0;
 				}
@@ -167,7 +168,7 @@ footer {
 				img {
 					padding-right: 20px;
 					@include ipad{
-						margin-bottom: 67px;
+						margin-bottom: 13px;
 					}
 				}
 
