@@ -627,7 +627,7 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 2rem;
   display: block;
-  padding-top: 22px;
+  padding-top: 19px;
   letter-spacing: 0;
 }
 @media (max-width: 768px) {
@@ -2828,9 +2828,9 @@ section.homeService .container:nth-of-type(odd) .txt {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e4a3ca), to(#b1b6f1));
-  background: -webkit-linear-gradient(top, #e4a3ca, #b1b6f1);
-  background: linear-gradient(to bottom, #e4a3ca, #b1b6f1);
+  background: -webkit-gradient(linear, left top, left bottom, from(#E4A4CB), to(#B4B9F2));
+  background: -webkit-linear-gradient(top, #E4A4CB, #B4B9F2);
+  background: linear-gradient(to bottom, #E4A4CB, #B4B9F2);
   color: #fff;
   font-size: 2.8rem;
   text-align: center;
@@ -2894,7 +2894,7 @@ section.homeService .container:nth-of-type(odd) .txt {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 32px;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 @media (max-width: 768px) {
   .flowMain .box .txt.voiceTxt .container {
@@ -2934,8 +2934,8 @@ section.homeService .container:nth-of-type(odd) .txt {
 .flowMain .box .txt.voiceTxt .container .voiceBox {
   width: calc(86.5% - 32px);
   margin-top: 57px;
-  border: solid 1px #e58ec0;
-  padding: 30px 50px 45px;
+  border: solid 2px #e58ec0;
+  padding: 35px 50px 45px;
   border-radius: 0 50px 50px 50px;
 }
 @media (max-width: 768px) {
@@ -2992,7 +2992,7 @@ section.homeService .container:nth-of-type(odd) .txt {
   letter-spacing: 0.1em;
   line-height: 1;
   color: #fff;
-  padding: 7px 15px;
+  padding: 9px 15px;
   border-radius: 20px;
   background-color: #e58ec0;
   margin-right: 15px;
@@ -3031,15 +3031,26 @@ section.homeService .container:nth-of-type(odd) .txt {
     margin-top: 20px;
   }
 }
+.flowMain .box .txt.voiceTxt .container img {
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .flowMain .box .txt.voiceTxt .container img {
+    margin-bottom: 0;
+  }
+}
 .flowMain .box .txt.voiceTxt .container:first-of-type img {
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 @media (max-width: 768px) {
   .flowMain .box .txt.voiceTxt .container:first-of-type img {
     margin-top: 0;
     margin-bottom: 0;
   }
+}
+.flowMain .box .txt.voiceTxt .container p {
+  line-height: 1.7;
 }
 .flowMain .box .txt.voiceTxt .container:nth-of-type(2) h4::after {
   left: 207px;
@@ -3463,7 +3474,7 @@ form .formBtn.c-Btn input {
   font-size: 2.4rem;
   font-weight: 500;
   letter-spacing: 0.05em;
-  line-height: 1;
+  line-height: 2.0833333333;
 }
 @media (max-width: 768px) {
   .privacyMain .wrap .container .txtBox h3 {
@@ -3489,7 +3500,7 @@ form .formBtn.c-Btn input {
 }
 .privacyMain .wrap .container .txtBox .txt h4 {
   font-size: 2rem;
-  line-height: 1;
+  line-height: 1.5;
   margin-bottom: 10px;
 }
 @media (max-width: 768px) {
