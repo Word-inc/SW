@@ -120,7 +120,7 @@ body {
 		}
 		img {
 			padding-bottom: 0;
-			margin-right: -5px;
+			margin-right: -1px;
 		}
 	}
 
@@ -272,8 +272,8 @@ body {
 
 h2 img {
 	@include ipad {
-		width: 35px;
-		height: 50px;
+		width: 30px;
+		height: 42px;
 		padding-bottom: 10px;
 	}
 }

@@ -676,7 +676,7 @@ body {
 }
 .c-Contact h2 img {
   padding-bottom: 0;
-  margin-right: -5px;
+  margin-right: -1px;
 }
 .c-Contact .container {
   display: -webkit-box;
@@ -851,8 +851,8 @@ body {
 
 @media (max-width: 768px) {
   h2 img {
-    width: 35px;
-    height: 50px;
+    width: 30px;
+    height: 42px;
     padding-bottom: 10px;
   }
 }
@@ -2576,6 +2576,7 @@ section.homeService .container:nth-of-type(odd) .txt {
   margin-top: 30px;
   margin-left: auto;
   max-width: 181px;
+  line-height: 1.8;
 }
 @media (max-width: 768px) {
   .aboutMain .box .txt .name {
