@@ -3032,10 +3032,12 @@ section.homeService .container:nth-of-type(odd) .txt {
 }
 .flowMain .box .txt.voiceTxt .container:first-of-type img {
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 @media (max-width: 768px) {
   .flowMain .box .txt.voiceTxt .container:first-of-type img {
     margin-top: 0;
+    margin-bottom: 0;
   }
 }
 .flowMain .box .txt.voiceTxt .container:nth-of-type(2) h4::after {

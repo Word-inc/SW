@@ -271,8 +271,10 @@
 				}
 				&:first-of-type img {
 					margin-top: 20px;
+					margin-bottom: 10px;
 					@include ipad {
 						margin-top: 0;
+						margin-bottom: 0;
 					}
 				}
 				&:nth-of-type(2) h4::after {
