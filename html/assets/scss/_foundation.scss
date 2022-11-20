@@ -12,6 +12,7 @@ body {
 	@include mainColor;
 	font-weight: 400;
 	position: relative;
+	overflow-x: hidden;
 }
 
 .c-Main {
@@ -272,8 +273,6 @@ body {
 
 h2 img {
 	@include ipad {
-		width: 30px;
-		height: 42px;
 		padding-bottom: 10px;
 	}
 }
