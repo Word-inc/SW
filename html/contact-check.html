@@ -2,16 +2,17 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="description" content="">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Outfit&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <meta name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Outfit&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="icon" href="assets/images/common/favicon.ico">
 </head>
 
 <body>
@@ -57,10 +58,11 @@
         </div>
         <div id="js-sns" class="sns hidden">
             <a href="#">
-        <img src="assets/images/common/icon2.svg" alt="Instagramアイコン">
-      </a><a href="#">
-        <img src="assets/images/common/icon3.svg" alt="Twitterアイコン">
-      </a>
+                <img src="assets/images/common/icon2.svg" alt="Instagramアイコン">
+            </a>
+            <a href="#">
+                <img src="assets/images/common/icon3.svg" alt="Twitterアイコン">
+            </a>
         </div>
     </header>
 
@@ -68,9 +70,11 @@
         <div class="wrap">
             <h2>
                 <picture>
-                    <source media="(max-width:767px)" srcset="assets/images/common/icon1-sp.svg">
-                    <img src="assets/images/common/icon1.svg" alt="タイトルアイコン">
-                </picture>
+                    <source media="(max-width:767px)"
+                      srcset="assets/images/common/icon1-sp.png 1x,assets/images/common/icon1-sp@2x.png 2x">
+                    <img src="assets/images/common/icon1.png" alt="タイトルアイコン"
+                      srcset="assets/images/common/icon1.png 1x,assets/images/common/icon1@2x.png 2x">
+                  </picture>
                 <p>CONTACT<span>お問い合わせ</span></p>
             </h2>
         </div>
@@ -90,7 +94,7 @@
                     <div class="mw_wp_form mw_wp_form_confirm">
                         <form action="#">
                             <div class="formItem">
-                                <p class="formLabel">お客様区分<span>（必須）</span></p>
+                                <label class="formLabel">お客様区分<span>（必須）</span></label>
                                 <div class="inputBox">
                                     <p>個人</p>
                                 </div>
