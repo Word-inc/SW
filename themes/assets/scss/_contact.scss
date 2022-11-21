@@ -142,7 +142,7 @@ form {
 			display: inline-block;
 			width: 20px;
 			height: 8px;
-			background: url(../images/common/arrow1.svg);
+			background: url(../img/common/arrow1.svg);
 			top: 29px;
 			right: 20px;
 			z-index: 20;
@@ -178,7 +178,7 @@ form {
 		color: #97a0a8;
 		&::before {
 			content: "";
-			background: url(../images/common/arrow2.svg);
+			background: url(../img/common/arrow2.svg);
 			left: 20px;
 		}
 		&::after {

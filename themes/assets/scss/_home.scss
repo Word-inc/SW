@@ -22,7 +22,7 @@ section.homeHero.over768 {
 		img {
 			width: 100%;
 			object-fit: cover;
-			@include wide{
+			@include wide {
 				width: 20vw;
 			}
 		}
@@ -36,7 +36,7 @@ section.homeHero.over768 {
 		img {
 			width: 100%;
 			object-fit: cover;
-			@include wide{
+			@include wide {
 				width: 13vw;
 			}
 		}
@@ -80,16 +80,16 @@ section.homeHero.under768 {
 // ABOUT
 section.homeAbout {
 	text-align: center;
-	background: url(../images/home/homeBg1.png) no-repeat center center;
-	background: image-set(url(../images/home/homeBg1.png) 1x, url(../images/home/homeBg1@2x.png) 2x) no-repeat center center;
+	background: url(../img/home/homeBg1.png) no-repeat center center;
+	background: image-set(url(../img/home/homeBg1.png) 1x, url(../img/home/homeBg1@2x.png) 2x) no-repeat center center;
 	background-size: cover;
 	margin-top: -10vw;
 	padding: 18vw 30px 140px;
 	@include ipad {
 		margin-top: 0;
 		padding: 60px 30px 80px;
-		background: url(../images/home/homeBg1-sp.png) no-repeat center center;
-		background: image-set(url(../images/home/homeBg1-sp.png) 1x, url(../images/home/homeBg1-sp@2x.png) 2x) no-repeat center center;
+		background: url(../img/home/homeBg1-sp.png) no-repeat center center;
+		background: image-set(url(../img/home/homeBg1-sp.png) 1x, url(../img/home/homeBg1-sp@2x.png) 2x) no-repeat center center;
 		background-size: cover;
 	}
 	h2 {
@@ -121,8 +121,8 @@ section.homeAbout {
 		line-height: 1.5;
 		position: relative;
 		padding-top: 10px;
-		background: url(../images/home/homeIcon1.png) no-repeat top 0 left 0, url(../images/home/homeIcon2.png) no-repeat bottom 0 right 0;
-		background: image-set(url(../images/home/homeIcon1.png) 1x,url(../images/home/homeIcon1@2x.png) 2x) no-repeat top 0 left 0,image-set(url(../images/home/homeIcon2.png) 1x,url(../images/home/homeIcon2@2x.png) 2x) no-repeat bottom 0 right 0;
+		background: url(../img/home/homeIcon1.png) no-repeat top 0 left 0, url(../img/home/homeIcon2.png) no-repeat bottom 0 right 0;
+		background: image-set(url(../img/home/homeIcon1.png) 1x, url(../img/home/homeIcon1@2x.png) 2x) no-repeat top 0 left 0, image-set(url(../img/home/homeIcon2.png) 1x, url(../img/home/homeIcon2@2x.png) 2x) no-repeat bottom 0 right 0;
 		@include ipad {
 			max-width: 270px;
 			height: 84px;
@@ -167,14 +167,16 @@ section.homeService {
 		max-width: 960px;
 		margin: 0 auto 160px;
 		padding: 44px 22px 35px;
-		background: url(../images/home/homeIcon3.png) no-repeat top 0 left 0, url(../images/home/homeIcon4.png) no-repeat top 0 right 0, url(../images/home/homeIcon5.png) no-repeat bottom 0 left 0, url(../images/home/homeIcon6.png) no-repeat bottom 0 right 0;
-		background: image-set(url(../images/home/homeIcon3.png) 1x,url(../images/home/homeIcon3@2x.png) 2x) no-repeat top 0 left 0,image-set(url(../images/home/homeIcon4.png) 1x,url(../images/home/homeIcon4@2x.png) 2x) no-repeat top 0 right 0,image-set(url(../images/home/homeIcon5.png) 1x,url(../images/home/homeIcon5@2x.png) 2x) no-repeat bottom 0 left 0,image-set(url(../images/home/homeIcon6.png) 1x,url(../images/home/homeIcon6@2x.png) 2x) no-repeat bottom 0 right 0;
+		background: url(../img/home/homeIcon3.png) no-repeat top 0 left 0, url(../img/home/homeIcon4.png) no-repeat top 0 right 0, url(../img/home/homeIcon5.png) no-repeat bottom 0 left 0, url(../img/home/homeIcon6.png) no-repeat bottom 0 right 0;
+		background: image-set(url(../img/home/homeIcon3.png) 1x, url(../img/home/homeIcon3@2x.png) 2x) no-repeat top 0 left 0, image-set(url(../img/home/homeIcon4.png) 1x, url(../img/home/homeIcon4@2x.png) 2x) no-repeat top 0 right 0,
+			image-set(url(../img/home/homeIcon5.png) 1x, url(../img/home/homeIcon5@2x.png) 2x) no-repeat bottom 0 left 0, image-set(url(../img/home/homeIcon6.png) 1x, url(../img/home/homeIcon6@2x.png) 2x) no-repeat bottom 0 right 0;
 
 		@include ipad {
 			padding-top: 35px;
 			margin-bottom: 80px;
-			background: url(../images/home/homeIcon3-sp.png) no-repeat top 0 left 0, url(../images/home/homeIcon4-sp.png) no-repeat top 0 right 0, url(../images/home/homeIcon5-sp.png) no-repeat bottom 0 left 0, url(../images/home/homeIcon6-sp.png) no-repeat bottom 0 right 0;
-			background: image-set(url(../images/home/homeIcon3-sp.png) 1x,url(../images/home/homeIcon3-sp@2x.png) 2x) no-repeat top 0 left 0,image-set(url(../images/home/homeIcon4-sp.png) 1x,url(../images/home/homeIcon4-sp@2x.png) 2x) no-repeat top 0 right 0,image-set(url(../images/home/homeIcon5-sp.png) 1x,url(../images/home/homeIcon5-sp@2x.png) 2x) no-repeat bottom 0 left 0,image-set(url(../images/home/homeIcon6-sp.png) 1x,url(../images/home/homeIcon6-sp@2x.png) 2x) no-repeat bottom 0 right 0;
+			background: url(../img/home/homeIcon3-sp.png) no-repeat top 0 left 0, url(../img/home/homeIcon4-sp.png) no-repeat top 0 right 0, url(../img/home/homeIcon5-sp.png) no-repeat bottom 0 left 0, url(../img/home/homeIcon6-sp.png) no-repeat bottom 0 right 0;
+			background: image-set(url(../img/home/homeIcon3-sp.png) 1x, url(../img/home/homeIcon3-sp@2x.png) 2x) no-repeat top 0 left 0, image-set(url(../img/home/homeIcon4-sp.png) 1x, url(../img/home/homeIcon4-sp@2x.png) 2x) no-repeat top 0 right 0,
+				image-set(url(../img/home/homeIcon5-sp.png) 1x, url(../img/home/homeIcon5-sp@2x.png) 2x) no-repeat bottom 0 left 0, image-set(url(../img/home/homeIcon6-sp.png) 1x, url(../img/home/homeIcon6-sp@2x.png) 2x) no-repeat bottom 0 right 0;
 		}
 		h3.intro {
 			text-align: center;
@@ -338,6 +340,8 @@ section.homeService {
 				}
 			}
 		}
+		.twitter-timeline {
+			margin: auto;
+		}
 	}
 }
-
