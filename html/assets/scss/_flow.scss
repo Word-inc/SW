@@ -114,7 +114,8 @@
 						width: 80px;
 						height: 80px;
 						border-radius: 50%;
-						background: linear-gradient(to bottom, #E4A4CB, #B4B9F2);
+						background: url(../images/flow/flowIcon3.png);
+						background: image-set(url(../images/flow/flowIcon3.png) 1x, url(../images/flow/flowIcon3@2x.png) 2x);
 						color: #fff;
 						font-size: 2.8rem;
 						text-align: center;
@@ -127,6 +128,8 @@
 							width: 60px;
 							height: 60px;
 							left: -30px;
+							background: url(../images/flow/flowIcon3-sp.png);
+						background: image-set(url(../images/flow/flowIcon3-sp.png) 1x, url(../images/flow/flowIcon3-sp@2x.png) 2x);
 						}
 						.num {
 							line-height: 1.2;
