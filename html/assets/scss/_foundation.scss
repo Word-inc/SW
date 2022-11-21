@@ -129,13 +129,13 @@ body {
 		display: flex;
 		width: 100%;
 		color: #fff;
-		background: url(../images/common/bg1.png) no-repeat;
+		background: url(../img/common/bg1.png) no-repeat;
 		height: 280px;
 		max-width: 1200px;
 		object-fit: cover;
 		position: relative;
 		@include small {
-			background: url(../images/common/bg1-sp.png) no-repeat;
+			background: url(../img/common/bg1-sp.png) no-repeat;
 			height: 300px;
 			flex-direction: column;
 		}
@@ -189,7 +189,7 @@ body {
 				opacity: 0;
 				width: 30px;
 				height: 10px;
-				background: url(../images/common/arrow3.svg);;
+				background: url(../img/common/arrow3.svg);;
 				right: 40px;
 				top: 50%;
 				transform: translateY(-50%);
@@ -259,7 +259,7 @@ body {
 			display: inline-block;
 			width: 20px;
 			height: 8px;
-			background: url(../images/common/arrow1.svg);
+			background: url(../img/common/arrow1.svg);
 			top: 29px;
 			right: 20px;
 		}
