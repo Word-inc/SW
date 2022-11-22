@@ -120,16 +120,12 @@ $subFont: 'Outfit', sans-serif;
 
 //color
 $mainColor: #1B2D3E;
-$grayColor: #FFF;
 $subColor: #000;
 
 //font-size
 
 //other
-$gradation: linear-gradient(90deg, rgba(82, 131, 180, 1) 0%, rgba(55, 87, 132, 1) 100%);
-@mixin gradation {
-	background: linear-gradient(90deg, rgba(82, 131, 180, 1) 0%, rgba(55, 87, 132, 1) 100%);
-}
+
 // #endregion
 
 // #region mixin
@@ -157,10 +153,6 @@ $gradation: linear-gradient(90deg, rgba(82, 131, 180, 1) 0%, rgba(55, 87, 132, 1
 // サブカラー
 @mixin subColor {
 	color: $subColor;
-}
-//グレーカラー
-@mixin grayColor {
-	color: $grayColor;
 }
 // ホバー：下線
 @mixin hoverTdul {

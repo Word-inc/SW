@@ -132,6 +132,17 @@ form {
 				color: #bcbcbc;
 			}
 		}
+
+		//追記
+		.mwform-radio-field input {
+			margin-right: 0;
+		}
+		.horizontal-item + .horizontal-item {
+			margin-left: 58px;
+		}
+		.error {
+			color: #e58ec0;
+		}
 	}
 	.formBtn.c-Btn {
 		text-align: center;
@@ -147,7 +158,7 @@ form {
 			right: 20px;
 			z-index: 20;
 		}
-		input {
+		button {
 			background-color: transparent;
 			padding: 0;
 			display: block;
@@ -185,7 +196,7 @@ form {
 			border-right: 1px #97a0a8 solid;
 			border-bottom: 1px #97a0a8 solid;
 		}
-		input {
+		button {
 			border: solid #97a0a8 1px;
 		}
 	}

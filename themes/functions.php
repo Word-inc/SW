@@ -292,7 +292,7 @@ function custom_login_logo()
     .login #login h1 a {
       max-width: 205px;
       width: 100%;
-      background: url(<?php echo get_stylesheet_directory_uri(); ?>/<?php echo get_template_directory_uri(); ?>/assets/img/common/logo1.svg) no-repeat center / contain;
+      background: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/img/common/logo1.png) no-repeat center / contain;
     }
   </style>
 <?php
@@ -426,3 +426,16 @@ function mvwpform_autop_filter()
   }
 }
 mvwpform_autop_filter();
+
+//mw wp form ビジュアルエディタ削除
+function visual_editor_off(){
+  global $typenow;
+  if( in_array( $typenow, array( 'page' ,'mw-wp-form' ) ) ){
+      add_filter('user_can_richedit', 'off_visual_editor');
+  }
+}
+function off_visual_editor(){
+  return false;
+}
+add_action( 'load-post.php', 'visual_editor_off' );
+add_action( 'load-post-new.php', 'visual_editor_off' );
