@@ -8,7 +8,7 @@
     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/homeText1.png" alt="10年後も好きでいられるワタシになろう。" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/homeText1.png 1x,<?php echo get_template_directory_uri(); ?>/assets/img/home/homeText1@2x.png 2x">
   </div>
   <div class="homeLink">
-    <a href="">
+    <a href="<?php echo home_url(); ?>/contact">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/homeLinkImg.png" alt="昼職の就職・転職相談はこちら" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/homeLinkImg.png 1x,<?php echo get_template_directory_uri(); ?>/assets/img/home/homeLinkImg@2x.png 2x">
     </a>
   </div>
@@ -25,7 +25,7 @@
     </picture>
   </div>
   <div class="homeLink">
-    <a href="">
+    <a href="<?php echo home_url(); ?>/contact">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/homeLinkimg-sp.png" alt="昼職の就職・転職相談はこちら" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/homeLinkimg-sp.png 1x,<?php echo get_template_directory_uri(); ?>/assets/img/home/homeLinkimg-sp@2x.png 2x">
     </a>
   </div>
@@ -56,7 +56,7 @@
       私たちは“変わりたい”と思うあなたの一歩を、<br class="under424">一緒に踏み出します。
     </div>
     <div class="c-Btn">
-      <a href="#">私たちについて</a>
+      <a href="<?php echo home_url(); ?>/about">私たちについて</a>
     </div>
   </div>
 </section>
@@ -97,7 +97,7 @@
           専任のアドバイザーが転職に対する不安や悩みを一緒に解決。どんな仕事が向いているか、どのように働きたいかなど、あなたのキャリアプランや、あなたに合った求人情報をご提案します。まずはお気軽にご相談ください♪
         </p>
         <div class="c-Btn">
-          <a href="#">お仕事紹介の流れ</a>
+          <a href="<?php echo home_url(); ?>/flow">お仕事紹介の流れ</a>
         </div>
       </div>
     </div>
@@ -109,7 +109,7 @@
           昼間の仕事へ転職したいと考えている、ナイトワークで働く女性に向けた求人サイト。あなたを必要としている優良企業・女性積極採用企業など、求人情報を多数掲載中！
         </p>
         <div class="c-Btn">
-          <a href="#">昼職コレクション</a>
+          <a href="https://hirucolle.com/" target="_blank" rel="noreferrer">昼職コレクション</a>
         </div>
       </div>
     </div>
@@ -131,14 +131,14 @@
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/homeIcon7.svg" alt="Instagramロゴ">
           Instagram
         </h3>
+        <?php echo do_shortcode( '[instagram-feed feed=1]' ); ?>
       </div>
       <div class="box">
         <h3 class="ttl">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/homeIcon8.svg" alt="Twitterロゴ">
           Twitter
         </h3>
-        <a class="twitter-timeline" data-lang="ja" data-width="410" data-height="410" data-theme="light" href="https://twitter.com/hirukore2019?ref_src=twsrc%5Etfw">Tweets by hirukore2019</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a class="twitter-timeline" data-lang="ja" data-width="410" data-height="410" href="https://twitter.com/hirukoreokayama?ref_src=twsrc%5Etfw">Tweets by hirukoreokayama</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </div>
   </div>

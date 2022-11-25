@@ -14,7 +14,7 @@
         移動または削除された可能性があります。
       </p>
       <div class="c-Btn">
-        <a href="#">TOPに戻る</a>
+        <a href="<?php echo home_url(); ?>">TOPに戻る</a>
       </div>
     </div>
   </div>

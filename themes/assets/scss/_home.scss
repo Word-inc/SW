@@ -285,7 +285,7 @@ section.homeService {
 			.txt {
 				padding-right: 0;
 				padding-left: 80px;
-				max-width: 41.5%;
+				max-width: 42.5%;
 				@include ipad {
 					max-width: 100%;
 					padding-left: 0;
@@ -318,14 +318,14 @@ section.homeService {
 		padding: 0 30px;
 		gap: 80px;
 		@include ipad {
-			display: block;
+			flex-wrap: wrap;
 		}
 		.box {
 			width: 46.5%;
 			@include ipad {
 				width: 100%;
 			}
-			h3.ttl {
+			.ttl {
 				@include subFont;
 				font-size: 2rem;
 				letter-spacing: 0.1em;
@@ -335,6 +335,9 @@ section.homeService {
 				margin-bottom: 40px;
 				border-top: 1px solid #1b2d3e;
 				border-bottom: 1px solid #e2e4e6;
+				@include ipad {
+					margin-bottom: 30px;
+				}
 				img {
 					padding-right: 20px;
 				}
@@ -342,6 +345,31 @@ section.homeService {
 		}
 		.twitter-timeline {
 			margin: auto;
+		}
+
+		#sb_instagram {
+			max-width: 410px;
+			width: 100%;
+			@include ipad {
+				max-width: 100%;
+			}
+			#sbi_images {
+				max-width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: flex-start;
+				flex-wrap: wrap;
+				gap: 30px;
+				@include ipad {
+					gap: 25px;
+				}
+				.sbi_item {
+					width: calc(100% / 2 - 15px); //50%からgapの30px引く
+					@include ipad {
+						width: calc(100% / 2 - 12.5px);
+					}
+				}
+			}
 		}
 	}
 }

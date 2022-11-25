@@ -383,7 +383,7 @@ function my_meta_ogp()
       $ps_thumb = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
       $ogp_img = $ps_thumb[0];
     } else {
-      $ogp_img =  DIRE . '/<?php echo get_template_directory_uri(); ?>/assets/img/common/ogp.jpg';
+      $ogp_img =  DIRE . '/assets/img/common/ogp.jpg';
     }
 
     //出力するOGPタグをまとめる

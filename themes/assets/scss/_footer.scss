@@ -135,43 +135,10 @@ footer {
 			}
 			.small {
 				font-size: 1.2rem;
-				letter-spacing: 0.1em;
 				padding-top: 5px;
 				padding-left: 20px;
 				position: relative;
 				letter-spacing: 0;
-				@include mainFont;
-				&:hover a {
-					color: #97a0a8;
-				}
-				@include ipad {
-					padding-left: 0;
-				}
-			}
-			.copyright{
-				position: relative;
-				left: 37px;
-				@include subFont;
-				@include ipad{
-					left: 0;
-				}
-			}
-			.box {
-				display: flex;
-				justify-content: flex-end;
-				align-items: center;
-				margin-bottom: 140px;
-				@include ipad {
-					display: block;
-					margin-bottom: 59px;
-				}
-				img {
-					padding-right: 20px;
-					@include ipad{
-						margin-bottom: 13px;
-					}
-				}
-
 				&::after {
 					content: "";
 					display: inline-block;
@@ -184,6 +151,45 @@ footer {
 					transform: rotate(15deg);
 					@include ipad {
 						content: none;
+					}
+				}
+				@include mainFont;
+				&:hover a {
+					color: #97a0a8;
+				}
+				@include ipad {
+					padding-left: 0;
+				}
+			}
+			.copyright {
+				position: relative;
+				left: 37px;
+				font-size: 1.2rem;
+				letter-spacing: .1em;
+				@include subFont;
+				@include ipad {
+					left: 0;
+				}
+			}
+			.box {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				margin-bottom: 140px;
+				@include ipad {
+					display: block;
+					margin-bottom: 59px;
+				}
+				.imgLink {
+					transition: 0.3s;
+					&:hover {
+						opacity: 0.7;
+					}
+				}
+				img {
+					padding-right: 20px;
+					@include ipad {
+						margin-bottom: 13px;
 					}
 				}
 			}

@@ -10,16 +10,14 @@
     </div>
 
 </section>
-<section class="contactMain contactCheckMain c-Main">
+<section class="contactMain contactConfirmMain c-Main">
     <div class="wrap">
         <div class="box">
             <div class="hide"></div>
             <div class="txt">
                 <div class="intro">
                     <h4>確認</h4>
-                    <p>
-                        入力内容をご確認いただき、送信ボタンを押してください。
-                    </p>
+                    <p>入力内容をご確認いただき、送信ボタンを押してください。</p>
                 </div>
                 <?php echo do_shortcode('[mwform_formkey key="34"]'); ?>
             </div>
