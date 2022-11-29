@@ -20,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <?php if (is_home() || is_front_page()) : ?>
-    <meta name="description" content="岡山の女性求人ならSW株式会社。あなたにあった企業、あなたにあった働き方、環境、あなたにピッタリの求人情報をお届け。働きたい女性をトータルサポートいたします。" />
+    <meta name="description" content="<?php echo get_option('custom_desc'); ?>" />
   <?php else : ?>
     <?php $description = $post->post_content;
     $description = str_replace(array("\r\n", "\r", "\n", "&nbsp;"), '', $description);

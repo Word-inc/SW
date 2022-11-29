@@ -353,6 +353,26 @@ function my_user_new_form($form_type)
 
 
 
+
+/**
+ * 一般設定に項目追加（ディスクリプション）
+ */
+// 項目の追加
+function add_custom_option_field()
+{
+  add_settings_field('custom_desc', 'ディスクリプション', 'display_custom_option', 'general');
+  register_setting('general', 'custom_desc');
+}
+add_filter('admin_init', 'add_custom_option_field');
+// 追加した項目の内容
+function display_custom_option()
+{
+  $custom_desc = get_option('custom_desc');
+?>
+  <textarea name="custom_desc" rows="5" style="width:100%; max-width:600px;"><?php echo $custom_desc; ?></textarea>
+<?php
+}
+
 /*********************
 OGPタグ/Twitterカード設定を出力
  *********************/
@@ -360,6 +380,7 @@ function my_meta_ogp()
 {
   if (is_front_page() || is_home() || is_singular()) {
     global $post;
+    $ogp_title = '';
     $ogp_descr = '';
     $ogp_url = '';
     $ogp_img = '';
@@ -367,11 +388,18 @@ function my_meta_ogp()
 
     if (is_singular()) { //記事＆固定ページ
       setup_postdata($post);
+      $ogp_title = $post->post_title . " | " . get_bloginfo('name');
       $ogp_descr = mb_substr(get_the_excerpt(), 0, 103);
       $ogp_url = get_permalink();
       wp_reset_postdata();
     } elseif (is_front_page() || is_home()) { //トップページ
-      $ogp_descr = get_bloginfo('description');
+      $desc = get_bloginfo('description');
+      if ($desc) {
+        $ogp_title = get_bloginfo('name') . " | " . $desc;
+      } else {
+        $ogp_title = get_bloginfo('name');
+      }
+      $ogp_descr = get_option('custom_desc'); //一般設定「ディスクリプション」から取得;
       $ogp_url = home_url();
     }
 
@@ -387,6 +415,7 @@ function my_meta_ogp()
     }
 
     //出力するOGPタグをまとめる
+    $insert .= '<meta property="og:title" content="' . esc_attr($ogp_title) . '" />' . "\n";
     $insert .= '<meta property="og:description" content="' . esc_attr($ogp_descr) . '" />' . "\n";
     $insert .= '<meta property="og:type" content="' . $ogp_type . '" />' . "\n";
     $insert .= '<meta property="og:url" content="' . esc_url($ogp_url) . '" />' . "\n";
@@ -428,14 +457,16 @@ function mvwpform_autop_filter()
 mvwpform_autop_filter();
 
 //mw wp form ビジュアルエディタ削除
-function visual_editor_off(){
+function visual_editor_off()
+{
   global $typenow;
-  if( in_array( $typenow, array( 'page' ,'mw-wp-form' ) ) ){
-      add_filter('user_can_richedit', 'off_visual_editor');
+  if (in_array($typenow, array('page', 'mw-wp-form'))) {
+    add_filter('user_can_richedit', 'off_visual_editor');
   }
 }
-function off_visual_editor(){
+function off_visual_editor()
+{
   return false;
 }
-add_action( 'load-post.php', 'visual_editor_off' );
-add_action( 'load-post-new.php', 'visual_editor_off' );
+add_action('load-post.php', 'visual_editor_off');
+add_action('load-post-new.php', 'visual_editor_off');

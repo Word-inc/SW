@@ -40,13 +40,15 @@
                         <h4>面談</h4>
                         <p>担当者と一緒に履歴書作成、面談対策</p>
                     </div>
-                    <div class="flowBox">
+                    <div class="flowBox step4">
                         <div>
                             <p class="num"><span>STEP</span>4</p>
                         </div>
                         <h4>昼職スタート</h4>
                         <p>入社までの書類や手続きなどトータルサポート​</p>
                     </div>
+
+                    <div class="flowBtn"><a href="<?php echo home_url(); ?>/contact">お問い合わせはこちら</a></div>
                 </div>
             </div>
         </div>

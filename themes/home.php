@@ -8,7 +8,7 @@
     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/homeText1.png" alt="10年後も好きでいられるワタシになろう。" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/homeText1.png 1x,<?php echo get_template_directory_uri(); ?>/assets/img/home/homeText1@2x.png 2x">
   </div>
   <div class="homeLink">
-    <a href="<?php echo home_url(); ?>/contact">
+    <a href="<?php echo home_url(); ?>/flow">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/homeLinkImg.png" alt="昼職の就職・転職相談はこちら" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/homeLinkImg.png 1x,<?php echo get_template_directory_uri(); ?>/assets/img/home/homeLinkImg@2x.png 2x">
     </a>
   </div>
@@ -25,7 +25,7 @@
     </picture>
   </div>
   <div class="homeLink">
-    <a href="<?php echo home_url(); ?>/contact">
+    <a href="<?php echo home_url(); ?>/flow">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/home/homeLinkimg-sp.png" alt="昼職の就職・転職相談はこちら" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/home/homeLinkimg-sp.png 1x,<?php echo get_template_directory_uri(); ?>/assets/img/home/homeLinkimg-sp@2x.png 2x">
     </a>
   </div>
